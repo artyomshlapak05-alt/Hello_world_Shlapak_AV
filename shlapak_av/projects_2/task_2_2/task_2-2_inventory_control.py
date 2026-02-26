@@ -1,0 +1,5 @@
+name_new_reagent = input("Название нового реактива: ")
+amount_of_reagent = int(input("Количество реактива:  ")) 
+result_file = open("C:/Users/Artem/Documents/shlapak_av/projects_2/task_2_2/inventory.txt", "a", encoding="utf-8")
+result_file.close()
+print(f"Реактив {name_new_reagent}", f"поступил в количестве {amount_of_reagent} шт. на склад")

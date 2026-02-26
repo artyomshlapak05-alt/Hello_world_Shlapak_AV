@@ -1,0 +1,17 @@
+name = input("Введите ФИО исследователя: ")
+date = input("Введите дату: ")
+exp = input("Введите название эксперимента: ")
+conc = input("Введите вывод: ")
+with open('journal.txt', 'w', encoding='utf-8') as f:
+    f.write("+---+---+\n")
+    f.write("| Электронный лабораторный журнал    |\n")
+    f.write("+---+---+\n")
+    f.write(f"| ФИО исследователя : {name}    |\n")
+    f.write(f"| Дата    : {date}    |\n")
+    f.write(f"| Эксперимент    : {exp}    |\n")
+    f.write("+---+---+\n")
+    f.write("| Вывод:    |\n")
+    f.write(f"| {conc}    |\n")
+    f.write("+---+---+\n")
+
+print("\nФайл journal.txt успешно создан!")
